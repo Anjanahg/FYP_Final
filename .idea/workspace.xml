@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="610ce424-3e17-4290-847b-d049ace197a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/SkullStriping/46.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Preprocessing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/54-s.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocessing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result.py" beforeDir="false" afterPath="$PROJECT_DIR$/Result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +15,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Final$Result.coverage" NAME="Result Coverage Results" MODIFIED="1583496018632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final$Result.coverage" NAME="Result Coverage Results" MODIFIED="1583560185325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final$Test.coverage" NAME="Test Coverage Results" MODIFIED="1583575250238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final$Cnn_Tumor.coverage" NAME="Cnn_Tumor Coverage Results" MODIFIED="1583485395969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final$Main.coverage" NAME="Main Coverage Results" MODIFIED="1583529998605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final$Main.coverage" NAME="Main Coverage Results" MODIFIED="1583573047150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Preprocessing.py">
+        <entry file="file://$PROJECT_DIR$/Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="208">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -41,6 +40,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>show</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -48,17 +52,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Cnn_Tumor.py" />
-        <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/Result.py" />
         <option value="$PROJECT_DIR$/Preprocessing.py" />
+        <option value="$PROJECT_DIR$/Result.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -85,6 +89,11 @@
               <item name="Images" type="462c0819:PsiDirectoryNode" />
               <item name="SkullStriping" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -99,8 +108,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\DELL\PycharmProject\Final" />
       <recent name="C:\Users\DELL\PycharmProject\Final\Input" />
+      <recent name="C:\Users\DELL\PycharmProject\Final" />
       <recent name="C:\Users\DELL\PycharmProject\Final\Model" />
       <recent name="C:\Users\DELL\PycharmProject\Final\Output" />
     </key>
@@ -124,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.Test">
     <configuration name="Cnn_Tumor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,13 +200,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.Cnn_Tumor" />
       <item itemvalue="Python.Result" />
+      <item itemvalue="Python.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Result" />
         <item itemvalue="Python.Cnn_Tumor" />
@@ -215,23 +248,31 @@
       <option name="presentableId" value="Default" />
       <updated>1583321636151</updated>
       <workItem from="1583321637524" duration="16206000" />
-      <workItem from="1583496631796" duration="9036000" />
+      <workItem from="1583496631796" duration="21704000" />
     </task>
+    <task id="LOCAL-00001" summary="2nd commit">
+      <created>1583557005414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583557005414</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25242000" />
+    <option name="totallyTimeSpent" value="37910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21342282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22751679" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988167" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32988167" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32988167" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39940828" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -251,6 +292,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Model/Model_config.json">
@@ -281,22 +326,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/46-s.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Anaconda3/envs/CNN_Env/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -308,17 +339,47 @@
     <entry file="file://$PROJECT_DIR$/img_otsu.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_connected_components.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/CNN_Env/Lib/site-packages/networkx/drawing/tests/test_pylab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="83" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="83" />
+        <state relative-caret-position="-546">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="-286">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Input/54-s.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Output/img_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="35" column="84" lean-forward="true" selection-start-line="35" selection-start-column="84" selection-end-line="35" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
