@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 
 import Result
-import Test
+import Cnn_Tumor
 
 # UI attributes
 root = tk.Tk()
