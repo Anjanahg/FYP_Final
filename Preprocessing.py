@@ -32,8 +32,6 @@ def resizing(img):
     return img
 # skull striping
 def skull_striping(img):
-    # writing the original image to input folder
-    cv2.imwrite('./Images/Input/img_original.jpg', img)
     # convert image to gray
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Threshold the image to binary using Otsu's method

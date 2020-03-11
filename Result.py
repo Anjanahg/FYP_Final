@@ -1,9 +1,11 @@
 import tkinter as tk
 from PIL import Image, ImageTk
-import time
+import numpy as np
 import cv2
 import Preprocessing as pp
 import Cnn_Tumor as ct
+import Methods as m
+import Classification as clsf
 def main(filepath):
    #window attributes
     ResultApp = tk.Toplevel()
@@ -14,8 +16,14 @@ def main(filepath):
 # methods
     def buttonClick():
         img = cv2.imread(filepath)
-        #img_resized = pp.resizing(img)
-        img_skull_removed = pp.skull_striping(img)
+        # writing the original image to input folder
+        cv2.imwrite('./Images/Input/img_original.jpg', img)
+
+        
+        # img_resized = pp.resizing(img)
+
+        # calling the skull striping method from Pre-processing.py
+        pp.skull_striping(img)
 
 
 
@@ -68,6 +76,43 @@ def main(filepath):
             label_6.place(x=1270, y=3)
             tk.Label(ResultApp, text="Tumor identified", fg="Red", font="Arial 10 bold").place(x=1310, y=265)
 
+        # Features section---------------------------------------------------------------------------------------
+        if (counter.get() == 7):
+            global featureSet
+            # read image from Images/Input
+            image = cv2.imread('./Images/Input/img_original.jpg', cv2.IMREAD_GRAYSCALE)
+            # get results and value array from classification.py
+            result, featureSet = clsf.get_rf_result(image)
+            state = str(result)
+            # mark the state according to the result
+            if result[0]==1:
+                state = "Yes"
+            else:
+                state = "No"
+            tk.Label(ResultApp, text="--------Image Feature Set-------", fg="firebrick4", font="Verdana 10 bold").place(
+                x=10, y=330)
+            tk.Label(ResultApp, text="Mean :  " + str(featureSet[0][0]), font="Verdana 10 bold").place(
+                x=10, y=360)
+            tk.Label(ResultApp, text="Entropy :  " + str(featureSet[0][1]), font="Verdana 10 bold").place(
+                x=10, y=390)
+            tk.Label(ResultApp, text="Kurtosis :  " + str(featureSet[0][2]),font="Verdana 10 bold").place(
+                x=10, y=420)
+            tk.Label(ResultApp, text="Standard Dev :  " + str(featureSet[0][3]), font="Verdana 10 bold").place(
+                x=10, y=450)
+            tk.Label(ResultApp, text="Skewness :  " + str(featureSet[0][4]), font="Verdana 10 bold").place(
+                x=10, y=480)
+            tk.Label(ResultApp, text="Contrast :  " + str(featureSet[0][5]), font="Verdana 10 bold").place(
+                x=10, y=510)
+            tk.Label(ResultApp, text="Homogeneity :  " + str(featureSet[0][6]), font="Verdana 10 bold").place(
+                x=10, y=540)
+            tk.Label(ResultApp, text="Co-Relation :  " + str(featureSet[0][7]), font="Verdana 10 bold").place(
+                x=10, y=570)
+            tk.Label(ResultApp, text="Energy :  " + str(featureSet[0][8]), font="Verdana 10 bold").place(
+                x=10, y=600)
+            tk.Label(ResultApp, text="Dissimilarity :  " + str(featureSet[0][9]), font="Verdana 10 bold").place(
+                x=10, y=630)
+            tk.Label(ResultApp, text="State :  " + state, fg="red", font="Verdana 10 bold").place(
+                x=10, y=660)
 
     # Next Button
     button_next = tk.Button(ResultApp, text=">>", padx=50, pady=5, command=buttonClick)
@@ -78,6 +123,9 @@ def main(filepath):
     label = tk.Label(ResultApp, image=ResultApp.image)
     label.place(x=10, y=3)
     tk.Label(ResultApp, text="Input Image", fg="Blue", font="Arial 10 bold").place(x=70, y=265)
+
+    #
+
 
     ResultApp.mainloop()
 
