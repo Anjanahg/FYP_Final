@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="610ce424-3e17-4290-847b-d049ace197a4" name="Default Changelist" comment="Feature extraction and random forrest classification done">
+    <list default="true" id="610ce424-3e17-4290-847b-d049ace197a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +22,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="-52">
               <caret line="16" column="93" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="93" />
             </state>
           </provider>
@@ -261,7 +260,7 @@
       <workItem from="1583321637524" duration="16206000" />
       <workItem from="1583496631796" duration="38911000" />
       <workItem from="1583730053266" duration="18166000" />
-      <workItem from="1583953524533" duration="658000" />
+      <workItem from="1583953524533" duration="840000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1583557005414</created>
@@ -291,11 +290,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583951845135</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Feature extraction and random forrest classification done">
+      <created>1583954215290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583954215290</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73941000" />
+    <option name="totallyTimeSpent" value="74123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -448,7 +454,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="-52">
           <caret line="16" column="93" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="93" />
         </state>
       </provider>
