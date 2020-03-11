@@ -14,7 +14,7 @@ mri_image = tk.StringVar()
 
 # methods
 def open_brain_image():
-    filename = filedialog.askopenfilename(initialdir="/", filetypes=[('Png Files', '*.png'), ('Jpeg Files', '*.jpg'),('Dicom Files', '*.DCM')])
+    filename = filedialog.askopenfilename(initialdir="/", filetypes=[('Png Files', '*.png'), ('Jpeg Files', '*.jpg'), ('Dicom Files', '*.DCM')])
     mri_image.set(filename)
 
 # process starting method
