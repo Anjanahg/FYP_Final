@@ -6,6 +6,8 @@ import Preprocessing as pp
 import Cnn_Tumor as ct
 import Methods as m
 import Classification as clsf
+import Cnn_Skull_Remove as csr
+
 def main(filepath):
    #window attributes
     ResultApp = tk.Toplevel()
@@ -24,7 +26,7 @@ def main(filepath):
 
         # calling the skull striping method from Pre-processing.py
         pp.skull_striping(img)
-
+        csr.main()
 
 
         # Initializing a counter
@@ -54,16 +56,16 @@ def main(filepath):
         # Display Closing-----------------------------------------------------------------------------------------------
         if (counter.get() == 4):
             ResultApp.image_4 = ImageTk.PhotoImage(
-                Image.open('./Images/SkullStriping/img_closing.jpg').resize((200, 258)))
+                Image.open('./Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg').resize((200, 258)))
             label_4 = tk.Label(ResultApp, image= ResultApp.image_4)
             label_4.place(x=850, y=3)
-            tk.Label(ResultApp, text="Closing", fg="Blue", font="Arial 10 bold").place(x=900, y=265)
+            tk.Label(ResultApp, text="Skull Stripped", fg="Blue", font="Arial 10 bold").place(x=900, y=265)
 
         # Display Segmented image by CNN--------------------------------------------------------------------------------
         if (counter.get() == 5):
             ct.main()
-            result = ct.get_yes_no()
-            print('yes no state(result.py,line 66)=',(result))
+            # get results and value array from classification.py
+            result, featureSet = clsf.get_rf_result()
             if result == 0:
                 ResultApp.image_5 = ImageTk.PhotoImage(
                     Image.open('./Images/CNN_Output/blank_mask.jpg').resize((200, 258)))
@@ -85,12 +87,8 @@ def main(filepath):
 
         # Features section---------------------------------------------------------------------------------------
         if (counter.get() == 7):
-            global featureSet
-            # read image from Images/Input
-            image = cv2.imread('./Images/Input/img_original.jpg', cv2.IMREAD_GRAYSCALE)
             # get results and value array from classification.py
-            result, featureSet = clsf.get_rf_result(image)
-            state = str(result)
+            result, featureSet = clsf.get_rf_result()
             # mark the state according to the result
             if result[0]==1:
                 state = "Yes"

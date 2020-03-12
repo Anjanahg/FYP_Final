@@ -24,9 +24,13 @@ def get_value_array(img):
 
 
 # Random forest classifier  -------------------------------------------------------
-def get_rf_result(img):
+def get_rf_result():
+
+    # read image from Images/Input
+    img = cv2.imread('./Images/Input/img_original.jpg', cv2.IMREAD_GRAYSCALE)
     # resizing images
     image = resize(img, 200)
+
     image = np.asanyarray(image)
     # Load the model from the file
     rf_trained_model = joblib.load('./Model_Classification/rf_trained_model.pkl')
@@ -34,6 +38,7 @@ def get_rf_result(img):
     values = get_value_array(image)
     # Use the loaded model to make predictions
     result = rf_trained_model.predict(values)
+
     return result, values
 
 

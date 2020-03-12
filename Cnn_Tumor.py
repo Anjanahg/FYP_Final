@@ -2,6 +2,7 @@ import cv2
 import imutils
 import numpy as np
 
+from Classification import get_rf_result
 from Cnn_Yes_No import get_yes_no
 
 
@@ -16,7 +17,7 @@ def main():
 		# path to trained model
 		checkpoints_path="./Model_CNN_Segmentation/model",
 		# input image path from images/skull striping
-		inp="./Images/SkullStriping/img_skull_removed.jpg",
+		inp="./Images/Input/img_original.jpg",
 		# output image path from  ./Images/CNN_Output
 		out_fname="./Images/CNN_Output/img_segment_by_cnn.jpg"
 	)
@@ -24,9 +25,9 @@ def main():
 	try:
 		# Read segmented image from output folder
 		# check weather yes image or no
-		result_yes_no = get_yes_no()
+		result, features = get_rf_result()
 		# if no use tha blank mask
-		if result_yes_no == 0:
+		if result == 0:
 			img = cv2.imread('./Images/CNN_Output/blank_mask.jpg', cv2.IMREAD_GRAYSCALE)
 		else:
 			img = cv2.imread('./Images/CNN_Output/img_segment_by_cnn.jpg', cv2.IMREAD_GRAYSCALE)
