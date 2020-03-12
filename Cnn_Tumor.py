@@ -2,6 +2,8 @@ import cv2
 import imutils
 import numpy as np
 
+from Cnn_Yes_No import get_yes_no
+
 
 def main():
 	from keras_segmentation.predict import predict
@@ -19,11 +21,18 @@ def main():
 		out_fname="./Images/CNN_Output/img_segment_by_cnn.jpg"
 	)
 
-
 	try:
 		# Read segmented image from output folder
-		img = cv2.imread('./Images/CNN_Output/img_segment_by_cnn.jpg', cv2.IMREAD_GRAYSCALE)
+		# check weather yes image or no
+		result_yes_no = get_yes_no()
+		# if no use tha blank mask
+		if result_yes_no == 0:
+			img = cv2.imread('./Images/CNN_Output/blank_mask.jpg', cv2.IMREAD_GRAYSCALE)
+		else:
+			img = cv2.imread('./Images/CNN_Output/img_segment_by_cnn.jpg', cv2.IMREAD_GRAYSCALE)
+		# given threshold to get tumor mask
 		thresh = 200
+
 		thresh_value, img_binary = cv2.threshold(img, thresh, 255, cv2.THRESH_BINARY)
 
 		# contour for suspicious point

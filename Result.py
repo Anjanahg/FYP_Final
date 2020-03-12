@@ -62,8 +62,15 @@ def main(filepath):
         # Display Segmented image by CNN--------------------------------------------------------------------------------
         if (counter.get() == 5):
             ct.main()
-            ResultApp.image_5 = ImageTk.PhotoImage(
-                Image.open('./Images/CNN_Output/img_segment_by_cnn.jpg').resize((200, 258)))
+            result = ct.get_yes_no()
+            print('yes no state(result.py,line 66)=',(result))
+            if result == 0:
+                ResultApp.image_5 = ImageTk.PhotoImage(
+                    Image.open('./Images/CNN_Output/blank_mask.jpg').resize((200, 258)))
+            else:
+                ResultApp.image_5 = ImageTk.PhotoImage(
+                    Image.open('./Images/CNN_Output/img_segment_by_cnn.jpg').resize((200, 258)))
+
             label_5 = tk.Label(ResultApp, image=ResultApp.image_5)
             label_5.place(x=1060, y=3)
             tk.Label(ResultApp, text="Segmented image", fg="Blue", font="Arial 10 bold").place(x=1095, y=265)
