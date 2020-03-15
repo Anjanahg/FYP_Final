@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="610ce424-3e17-4290-847b-d049ace197a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cnn_Skull_Remove.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model_CNN_Skull_Remove/model.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model_CNN_Skull_Remove/model_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KnowledgeBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cnn_Tumor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cnn_Tumor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocessing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result.py" beforeDir="false" afterPath="$PROJECT_DIR$/Result.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +15,22 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final$Cnn_Skull_Remove.coverage" NAME="Cnn_Skull_Remove Coverage Results" MODIFIED="1584025512041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final$Preprocessing.coverage" NAME="Preprocessing Coverage Results" MODIFIED="1584283609133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final$Classification.coverage" NAME="Classification Coverage Results" MODIFIED="1584017997149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final$Result.coverage" NAME="Result Coverage Results" MODIFIED="1583560185325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final$Result.coverage" NAME="Result Coverage Results" MODIFIED="1584280406952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final$KnowledgeBase.coverage" NAME="KnowledgeBase Coverage Results" MODIFIED="1584270336050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final$Test.coverage" NAME="Test Coverage Results" MODIFIED="1583597532446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final$Cnn_Yes_No.coverage" NAME="Cnn_Yes_No Coverage Results" MODIFIED="1584005964519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final$Cnn_Tumor.coverage" NAME="Cnn_Tumor Coverage Results" MODIFIED="1583605265429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final$Main.coverage" NAME="Main Coverage Results" MODIFIED="1584025522670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final$Main.coverage" NAME="Main Coverage Results" MODIFIED="1584286069521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Cnn_Skull_Remove.py">
+        <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="219">
+              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -59,21 +57,22 @@
       <list>
         <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/Predict.py" />
-        <option value="$PROJECT_DIR$/Preprocessing.py" />
         <option value="$PROJECT_DIR$/Methods.py" />
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/Cnn_Yes_No.py" />
         <option value="$PROJECT_DIR$/Classification.py" />
-        <option value="$PROJECT_DIR$/Cnn_Tumor.py" />
         <option value="$PROJECT_DIR$/Cnn_Skull_Remove.py" />
+        <option value="$PROJECT_DIR$/KnowledgeBase.py" />
+        <option value="$PROJECT_DIR$/Cnn_Tumor.py" />
+        <option value="$PROJECT_DIR$/Preprocessing.py" />
         <option value="$PROJECT_DIR$/Result.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -96,14 +95,7 @@
             </path>
             <path>
               <item name="Final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Final" type="462c0819:PsiDirectoryNode" />
-              <item name="Images" type="462c0819:PsiDirectoryNode" />
-              <item name="CNN_Skull_Remove_Output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Final" type="462c0819:PsiDirectoryNode" />
-              <item name="Model_Yes_No" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -147,28 +139,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Main">
-    <configuration name="Classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classification.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Cnn_Skull_Remove" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Cnn_Tumor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="KnowledgeBase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -204,29 +174,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cnn_Tumor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Cnn_Yes_No" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cnn_Yes_No.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KnowledgeBase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,20 +205,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Preprocessing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Result" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Result.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.Cnn_Tumor" />
-      <item itemvalue="Python.Classification" />
-      <item itemvalue="Python.Cnn_Yes_No" />
       <item itemvalue="Python.Cnn_Skull_Remove" />
+      <item itemvalue="Python.Result" />
+      <item itemvalue="Python.KnowledgeBase" />
+      <item itemvalue="Python.Preprocessing" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Preprocessing" />
+        <item itemvalue="Python.Result" />
+        <item itemvalue="Python.KnowledgeBase" />
         <item itemvalue="Python.Cnn_Skull_Remove" />
-        <item itemvalue="Python.Classification" />
-        <item itemvalue="Python.Cnn_Yes_No" />
-        <item itemvalue="Python.Cnn_Tumor" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +279,10 @@
       <workItem from="1583321637524" duration="16206000" />
       <workItem from="1583496631796" duration="38911000" />
       <workItem from="1583730053266" duration="18166000" />
-      <workItem from="1583953524533" duration="17053000" />
+      <workItem from="1583953524533" duration="25383000" />
+      <workItem from="1584103312899" duration="9506000" />
+      <workItem from="1584280282883" duration="5285000" />
+      <workItem from="1584285900410" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1583557005414</created>
@@ -338,21 +333,29 @@
       <option name="project" value="LOCAL" />
       <updated>1584013160000</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="phase 7">
+      <created>1584025895088</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584025895088</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90336000" />
+    <option name="totallyTimeSpent" value="114154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7969095" visible="true" weight="0.2342282" />
-      <window_info id="Structure" order="1" sideWeight="0.2030905" side_tool="true" visible="true" weight="0.2342282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7914201" visible="true" weight="0.28993288" />
+      <window_info id="Structure" order="1" sideWeight="0.20857988" side_tool="true" visible="true" weight="0.28993288" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988167" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32988167" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32988167" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39940828" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -366,7 +369,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.14563759" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.020134227" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -389,11 +392,10 @@
     <MESSAGE value="Basic pre processing and CNN integration done" />
     <MESSAGE value="Feature extraction and random forrest classification done" />
     <MESSAGE value="phase 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="phase 6" />
+    <MESSAGE value="phase 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="phase 7" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Input/Y153.jpg" />
-    <entry file="file://$PROJECT_DIR$/Input/Y155.JPG" />
     <entry file="file://$PROJECT_DIR$/Input/Y157.JPG" />
     <entry file="file://$PROJECT_DIR$/Output/fuck.JPG" />
     <entry file="file://$PROJECT_DIR$/Output/fuck1.JPG" />
@@ -434,59 +436,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images.jpg" />
     <entry file="file://$PROJECT_DIR$/1.png" />
-    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_otsu.jpg">
+    <entry file="file://$PROJECT_DIR$/Images/CNN_Output/blank_mask.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_connected_components.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_blended.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/CNN_Env/Lib/site-packages/sklearn/externals/joblib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Images/CNN_Output/img_tumor_marked.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/Input/img_original.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/CNN_Output/blank_mask.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Images/CNN_Output/img_segment_by_cnn.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_closing.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_skull_removed.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Cnn_Yes_No.py">
@@ -496,10 +459,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cnn_Tumor.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="50" />
+        <state relative-caret-position="282">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cnn_Skull_Remove.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -509,17 +494,65 @@
     <entry file="file://$PROJECT_DIR$/Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Result.py">
+    <entry file="file://$PROJECT_DIR$/Images/Input/img_original.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/Knowledgebase_Output/kb_img_tumor_marked_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/Knowledgebase_Output/kb_img_tumor_marked_2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_blended.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_closing.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_connected_components.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_otsu.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_skull_removed.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/SkullStriping/img_watershed.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cnn_Tumor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        <state relative-caret-position="234">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cnn_Skull_Remove.py">
+    <entry file="file://$PROJECT_DIR$/KnowledgeBase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="776">
+          <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3640">
+          <caret line="140" column="106" selection-start-line="140" selection-start-column="106" selection-end-line="140" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
         </state>
       </provider>
     </entry>

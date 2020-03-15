@@ -5,6 +5,7 @@ import cv2
 import Preprocessing as pp
 import Cnn_Tumor as ct
 import Methods as m
+import KnowledgeBase as kb
 import Classification as clsf
 import Cnn_Skull_Remove as csr
 
@@ -48,10 +49,10 @@ def main(filepath):
 
         # Display Skull removed-----------------------------------------------------------------------------------------
         if (counter.get() == 3):
-            ResultApp.image_3 = ImageTk.PhotoImage(Image.open('./Images/SkullStriping/img_skull_removed.jpg').resize((200, 258)))
+            ResultApp.image_3 = ImageTk.PhotoImage(Image.open('./Images/SkullStriping/img_watershed.jpg').resize((200, 258)))
             label_3 = tk.Label(ResultApp, image=ResultApp.image_3)
             label_3.place(x=640, y=3)
-            tk.Label(ResultApp, text=" Skull Removed", fg="Blue", font="Arial 10 bold").place(x=680, y=265)
+            tk.Label(ResultApp, text=" Watershed", fg="Blue", font="Arial 10 bold").place(x=680, y=265)
 
         # Display Closing-----------------------------------------------------------------------------------------------
         if (counter.get() == 4):
@@ -83,7 +84,16 @@ def main(filepath):
                 Image.open('./Images/CNN_Output/img_tumor_marked.jpg').resize((200, 258)))
             label_6 = tk.Label(ResultApp, image=ResultApp.image_6)
             label_6.place(x=1270, y=3)
-            tk.Label(ResultApp, text="Tumor identified", fg="Red", font="Arial 10 bold").place(x=1310, y=265)
+
+            ct.main()
+            # get results and value array from classification.py
+            result, featureSet = clsf.get_rf_result()
+            if result == 0:
+                tk.Label(ResultApp, text="No Tumor Detected", fg="Green", font="Arial 10 bold").place(x=1310, y=265)
+            else:
+                tk.Label(ResultApp, text="Tumor identified", fg="Red", font="Arial 10 bold").place(x=1310, y=265)
+
+
 
         # Features section---------------------------------------------------------------------------------------
         if (counter.get() == 7):
@@ -119,9 +129,51 @@ def main(filepath):
             tk.Label(ResultApp, text="State :  " + state, fg="red", font="Verdana 10 bold").place(
                 x=10, y=660)
 
+        # Display tumor marked image---------------------------------------------------------------------------------------
+        if (counter.get() == 8):
+            # get results and value array from classification.py
+            result, featureSet = clsf.get_rf_result()
+            if result == 0:
+                ResultApp.image_7 = ImageTk.PhotoImage(
+                    Image.open('./Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg').resize((200, 258)))
+                label_7 = tk.Label(ResultApp, image=ResultApp.image_7)
+                label_7.place(x=1060, y=300)
+                tk.Label(ResultApp, text="No Tumor region", fg="Green", font="Arial 10 bold").place(x=1105, y=570)
+            else:
+                # calling knowledge base
+                kb.main()
+                ResultApp.image_7 = ImageTk.PhotoImage(
+                    Image.open('./Images/Knowledgebase_Output/kb_img_tumor_marked_1.jpg').resize((200, 258)))
+                label_7 = tk.Label(ResultApp, image=ResultApp.image_7)
+                label_7.place(x=1060, y=300)
+                tk.Label(ResultApp, text="Tumor region", fg="Red", font="Arial 10 bold").place(x=1105, y=570)
+
+
+
+        # Display tumor marked image 2--------------------------------------------------------------------------------------
+        if (counter.get() == 9):
+            # get results and value array from classification.py
+            result, featureSet = clsf.get_rf_result()
+            if result == 0:
+                ResultApp.image_8 = ImageTk.PhotoImage(
+                    Image.open('./Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg').resize((200, 258)))
+                label_8 = tk.Label(ResultApp, image=ResultApp.image_8)
+                label_8.place(x=1270, y=300)
+                tk.Label(ResultApp, text="No Critical Area", fg="Green", font="Arial 10 bold").place(x=1320, y=570)
+            else:
+                ResultApp.image_8 = ImageTk.PhotoImage(
+                    Image.open('./Images/Knowledgebase_Output/kb_img_tumor_marked_2.jpg').resize((200, 258)))
+                label_8 = tk.Label(ResultApp, image=ResultApp.image_8)
+                label_8.place(x=1270, y=300)
+                tk.Label(ResultApp, text="Critical Area", fg="Red", font="Arial 10 bold").place(x=1320, y=570)
+
+
+
+
+
     # Next Button
-    button_next = tk.Button(ResultApp, text=">>", padx=50, pady=5, command=buttonClick)
-    button_next.place(x=740, y=580)
+    button_next = tk.Button(ResultApp, text="Click Here", padx=60, pady=5, command=buttonClick)
+    button_next.place(x=680, y=660)
 
     # OriginalImage ----------------------------------------------------------------------------------------------------
     ResultApp.image = ImageTk.PhotoImage(Image.open(filepath).resize((200, 258)))
