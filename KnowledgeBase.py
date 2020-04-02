@@ -1,8 +1,15 @@
 import cv2
 import imutils
 
+
+
 def main():
     image_skull_removed = cv2.imread('./Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg', cv2.IMREAD_GRAYSCALE)
+
+    # adding Gaussian blur
+    img_blr = cv2.GaussianBlur(image_skull_removed, (5,5), 0)
+    # enhancement
+    img_blr = cv2.convertScaleAbs(img_blr, alpha=1.3, beta=.8)
 
     # declaring array
     arr = []

@@ -65,12 +65,17 @@ def main(filepath):
         # Display Segmented image by CNN--------------------------------------------------------------------------------
         if (counter.get() == 5):
             ct.main()
+            # use global variable of state
+            global cnn_result
+
             # get results and value array from classification.py
             result, featureSet = clsf.get_rf_result()
             if result == 0:
+                cnn_result = 0
                 ResultApp.image_5 = ImageTk.PhotoImage(
                     Image.open('./Images/CNN_Output/blank_mask.jpg').resize((200, 258)))
             else:
+                cnn_result = 1
                 ResultApp.image_5 = ImageTk.PhotoImage(
                     Image.open('./Images/CNN_Output/img_segment_by_cnn.jpg').resize((200, 258)))
 
@@ -131,22 +136,27 @@ def main(filepath):
 
         # Display tumor marked image---------------------------------------------------------------------------------------
         if (counter.get() == 8):
+            # global variable for classifier result
+            global classifier_result
             # get results and value array from classification.py
             result, featureSet = clsf.get_rf_result()
             if result == 0:
+                classifier_result = 0
                 ResultApp.image_7 = ImageTk.PhotoImage(
                     Image.open('./Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg').resize((200, 258)))
                 label_7 = tk.Label(ResultApp, image=ResultApp.image_7)
-                label_7.place(x=1060, y=300)
-                tk.Label(ResultApp, text="No Tumor region", fg="Green", font="Arial 10 bold").place(x=1105, y=570)
+                label_7.place(x=430, y=300)
+                tk.Label(ResultApp, text="No Tumor region", fg="Green", font="Arial 10 bold").place(x=495, y=570)
             else:
+                # setting value
+                classifier_result = 1
                 # calling knowledge base
                 kb.main()
                 ResultApp.image_7 = ImageTk.PhotoImage(
                     Image.open('./Images/Knowledgebase_Output/kb_img_tumor_marked_1.jpg').resize((200, 258)))
                 label_7 = tk.Label(ResultApp, image=ResultApp.image_7)
-                label_7.place(x=1060, y=300)
-                tk.Label(ResultApp, text="Tumor region", fg="Red", font="Arial 10 bold").place(x=1105, y=570)
+                label_7.place(x=430, y=300)
+                tk.Label(ResultApp, text="Tumor region", fg="Red", font="Arial 10 bold").place(x=495, y=570)
 
 
 
@@ -158,22 +168,33 @@ def main(filepath):
                 ResultApp.image_8 = ImageTk.PhotoImage(
                     Image.open('./Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg').resize((200, 258)))
                 label_8 = tk.Label(ResultApp, image=ResultApp.image_8)
-                label_8.place(x=1270, y=300)
-                tk.Label(ResultApp, text="No Critical Area", fg="Green", font="Arial 10 bold").place(x=1320, y=570)
+                label_8.place(x=640, y=300)
+                tk.Label(ResultApp, text="No Critical Area", fg="Green", font="Arial 10 bold").place(x=680, y=570)
             else:
                 ResultApp.image_8 = ImageTk.PhotoImage(
                     Image.open('./Images/Knowledgebase_Output/kb_img_tumor_marked_2.jpg').resize((200, 258)))
                 label_8 = tk.Label(ResultApp, image=ResultApp.image_8)
-                label_8.place(x=1270, y=300)
-                tk.Label(ResultApp, text="Critical Area", fg="Red", font="Arial 10 bold").place(x=1320, y=570)
+                label_8.place(x=640, y=300)
+                tk.Label(ResultApp, text="Critical Area", fg="Red", font="Arial 10 bold").place(x=680, y=570)
+
+            # Display final result-------------------------------------------------------------------------------------
+        if (counter.get() == 10):
+            if(classifier_result == 1 and cnn_result == 1):
+                final_state = "Tumor Identified by the both CNN and Classifier."
+            if(classifier_result == 1 and cnn_result == 0):
+                final_state = "Tumor Identified by the Classifier."
+            if (classifier_result == 0 and cnn_result == 1):
+                final_state = "Tumor Identified by the CNN."
+            if (classifier_result == 0 and cnn_result == 0):
+                final_state = "No tumor Identified."
+
+            tk.Label(ResultApp, text="Final Result", fg="black", font="Arial 20 bold underline").place(x=995, y=320)
+            tk.Label(ResultApp, text=final_state, fg="blue", font="Arial 15 bold").place(x=995, y=360)
 
 
-
-
-
-    # Next Button
+   # Next Button
     button_next = tk.Button(ResultApp, text="Click Here", padx=60, pady=5, command=buttonClick)
-    button_next.place(x=680, y=660)
+    button_next.place(x=540, y=655)
 
     # OriginalImage ----------------------------------------------------------------------------------------------------
     ResultApp.image = ImageTk.PhotoImage(Image.open(filepath).resize((200, 258)))
@@ -181,7 +202,6 @@ def main(filepath):
     label.place(x=10, y=3)
     tk.Label(ResultApp, text="Input Image", fg="Blue", font="Arial 10 bold").place(x=70, y=265)
 
-    #
 
 
     ResultApp.mainloop()
