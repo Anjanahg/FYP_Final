@@ -26,8 +26,13 @@ cv2.rectangle(img_original, (x, y), (x+w, y+h), (0, 255, 0), 2)
 cv2.putText(img_original, 'Tumor Region', (x+w+10, y+h), 0,0.3, (0, 255, 0))
 
 
+# Image cropping and masking
+white_bg = np.ones_like(img_original)
 
+crop_img = img_original[y:y+h, x:x+w]
+white_bg[y:y+h, x:x+w] = crop_img
 
 
 cv2.imshow('a',img_original)
+cv2.imshow('a',white_bg)
 cv2.waitKey(0)

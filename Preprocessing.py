@@ -6,7 +6,6 @@ from networkx.drawing.tests.test_pylab import plt
 
 # image writing method
 def write_image(title,img,ctype):
-  plt.figure(figsize=(10, 10))
   if ctype=='bgr':
     b,g,r = cv2.split(img)       # get b,g,r
     rgb_img = cv2.merge([r,g,b])     # switch it to rgb

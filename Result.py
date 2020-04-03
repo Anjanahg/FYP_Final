@@ -27,7 +27,7 @@ def main(filepath):
 
         # calling the skull striping method from Pre-processing.py
         pp.skull_striping(img)
-        csr.main()
+
 
 
         # Initializing a counter
@@ -54,8 +54,9 @@ def main(filepath):
             label_3.place(x=640, y=3)
             tk.Label(ResultApp, text=" Watershed", fg="Blue", font="Arial 10 bold").place(x=680, y=265)
 
-        # Display Closing-----------------------------------------------------------------------------------------------
+        # Display Skull Stripped by CNN--------------------------------------------------------------------------------
         if (counter.get() == 4):
+            csr.main()
             ResultApp.image_4 = ImageTk.PhotoImage(
                 Image.open('./Images/CNN_Skull_Remove_Output/img_skull_removed_by_cnn.jpg').resize((200, 258)))
             label_4 = tk.Label(ResultApp, image= ResultApp.image_4)
@@ -83,22 +84,19 @@ def main(filepath):
             label_5.place(x=1060, y=3)
             tk.Label(ResultApp, text="Segmented image", fg="Blue", font="Arial 10 bold").place(x=1095, y=265)
 
-        # Display Segmented image---------------------------------------------------------------------------------------
+        # Display Segmented original image------------------------------------------------------------------------------
         if (counter.get() == 6):
             ResultApp.image_6 = ImageTk.PhotoImage(
                 Image.open('./Images/CNN_Output/img_tumor_marked.jpg').resize((200, 258)))
             label_6 = tk.Label(ResultApp, image=ResultApp.image_6)
             label_6.place(x=1270, y=3)
 
-            ct.main()
             # get results and value array from classification.py
             result, featureSet = clsf.get_rf_result()
             if result == 0:
                 tk.Label(ResultApp, text="No Tumor Detected", fg="Green", font="Arial 10 bold").place(x=1310, y=265)
             else:
                 tk.Label(ResultApp, text="Tumor identified", fg="Red", font="Arial 10 bold").place(x=1310, y=265)
-
-
 
         # Features section---------------------------------------------------------------------------------------
         if (counter.get() == 7):
